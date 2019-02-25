@@ -220,7 +220,7 @@ enabled. This prevents the Project Factory from looking up the GCP organization.
   ```sh
   # requires `roles/resourcemanager.organizationAdmin` on the organization and
   # `roles/serviceusage.serviceUsageAdmin` on $SEED_PROJECT
-  ./helpers/setup-sa.sh [organization id] "$SEED_PROJECT"
+  ./helpers/setup-sa-org.sh [organization id] "$SEED_PROJECT"
     ```
 
 #### Missing API: `cloudbilling.googleapis.com`
@@ -261,7 +261,7 @@ charges, such as the Google Compute Engine API.
     ```
     # requires `roles/resourcemanager.organizationAdmin` on the organization
     # and `roles/serviceusage.serviceUsageAdmin` on $SEED_PROJECT
-    ./helpers/setup-sa.sh [organization id] "$SEED_PROJECT"
+    ./helpers/setup-sa-org.sh [organization id] "$SEED_PROJECT"
     ```
 
 **Notes:**
@@ -338,7 +338,7 @@ assigning IAM roles to groups, service accounts, etc.
   ```sh
   # requires `roles/resourcemanager.organizationAdmin` on the organization and
   # `roles/serviceusage.serviceUsageAdmin` on $SEED_PROJECT
-  ./helpers/setup-sa.sh [organization id] "$SEED_PROJECT"
+  ./helpers/setup-sa-org.sh [organization id] "$SEED_PROJECT"
     ```
 
 #### Missing API: `appengine.googleapis.com`
@@ -380,7 +380,7 @@ of an App Engine instance on the Target Project.
   ```sh
   # requires `roles/resourcemanager.organizationAdmin` on the organization and
   # `roles/serviceusage.serviceUsageAdmin` on $SEED_PROJECT
-  ./helpers/setup-sa.sh [organization id] "$SEED_PROJECT"
+  ./helpers/setup-sa-org.sh [organization id] "$SEED_PROJECT"
     ```
 
 **Notes:**
@@ -430,7 +430,7 @@ information.
   ```sh
   # requires `roles/resourcemanager.organizationAdmin` on the organization and
   # `roles/serviceusage.serviceUsageAdmin` on $SEED_PROJECT
-  ./helpers/setup-sa.sh [organization id] "$SEED_PROJECT"
+  ./helpers/setup-sa-org.sh [organization id] "$SEED_PROJECT"
     ```
 
 - - -
@@ -484,7 +484,7 @@ name.
 
 **Solution:**
 
-Use `helpers/setup-sa.sh` to create a new Seed Service Account with the necessary
+Use `helpers/setup-sa-org.sh` to create a new Seed Service Account with the necessary
 roles.
 
 OR
@@ -520,7 +520,7 @@ to generate new projects within the GCP organization.
 
 **Solution:**
 
-Use `helpers/setup-sa.sh` to create a new Seed Service Account with the necessary
+Use `helpers/setup-sa-org.sh` to create a new Seed Service Account with the necessary
 roles.
 
 OR
@@ -602,7 +602,7 @@ and managing access to the host VPC network resources.
 
 **Solution:**
 
-Use `helpers/setup-sa.sh` to create a new Seed Service Account with the
+Use `helpers/setup-sa-org.sh` to create a new Seed Service Account with the
 necessary roles.
 
 OR
